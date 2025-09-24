@@ -82,10 +82,7 @@ class DAggerDataCollectionWrapper(Wrapper):
         # switching to self.env.sim.model.get_xml() does not create this issue
         self._current_task_instance_xml = self.env.sim.model.get_xml()
 
-        # import pdb; pdb.set_trace()
-        #  'gripper0_right_grip_site', 'gripper0_right_grip_site_cylinder',
-        # get xml string for gripper sites
-        # self.
+        # UNCOMMENT BELOW TO TURN OFF INDICATORS
         indicators = ['gripper0_right_grip_site', 'gripper0_right_grip_site_cylinder']
         for indicator_name in indicators:
             site_id = self.env.sim.model.site_name2id(indicator_name)
